@@ -1,39 +1,80 @@
 *{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-body{
-    background-color: rgb(13, 2, 7  3);
-}
-.menu{
-    position: fixed;
+    font-family: sans-serif;
     width: 100%;
-    height: 80px;
-    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: #fff;
+}
+body {
+    background-color: #18181B;
+    height: 100vh; /*não ficar com borda nos cantos superiores e inferiores*/
+    width: 100%;
     display: flex;
-    background-color:rgb(51, 49, 49);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*alinhar itens em coluna*/
+}
+.logo{
+    max-width: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px; /*margem inferior, desgrudar do texto  */
+    text-align: center;
+    font-size: 50px;
+}
+main{
+    max-width: 480px;
+    margin: 14px;
+}
+.slider{
+    cursor: pointer;
+    background-color: gray;
+    height: 18px;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    border-radius: 5px;
+}
+.btn-gerar{
+    background-color: rgb(38, 188, 38);  
     color: white;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 0px;
+    height: 40px;
+    font-weight: bold;
+    font-size: medium;
+}
+.btn-gerar:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.div-senha{
+    max-width: 480px;
+    margin: 14px;
+    display: flex;
+    cursor: pointer;
+}
+.titulo-senha{
+    width: 100%;
     font-size: 20px;
     font-weight: bold;
     padding-top: 10px;
-    padding-left: 10px;
-    
+    padding-bottom: 10px;
 }
-h1{
+.senha-gerada{
+    float: right;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(128, 128, 128, 0.40);
     text-align: center;
-    color: #fff;
-    justify-content: center;
-    display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid black;
+    transition: 0.5s;
 }
-footer{
-    height: 100px;
+.senha-gerada:hover, .copiar-senha:hover{
+    transform: scale(1.05);
 }
-a{
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 1px;
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    font-size: 24px;
+.copiar-senha{
+    text-align: center;
+    border: 1px solid white;
+    transition: 0.5s;
 }

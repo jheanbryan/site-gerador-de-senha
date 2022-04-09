@@ -5,140 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Exemplo de site</title>
+    <meta name="keyword" content="Gerador de senhas, gerador de password"> <!-- Ajuda nas pesquisas e buscas -->
+    <title>Gerador de Senha</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="menu">
-                <a href="home">Home</a>
-                <a href="sobre">Sobre</a>
-                <a href="contato">Contato</a>
-        </nav>
-    </header>
 
-    <h1 class="home">Home</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Ducimus odio suscipit harum. Nostrum animi illo, ab doloribus
-        at delectus fugiat veniam eius corporis rem reprehenderit iusto
-        possimus necessitatibus quasi et!
-    </p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>v<br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>v<br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>v<br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>v<br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>v<br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>v<br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>
-    <h1 class="sobre">Sobre</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Ducimus odio suscipit harum. Nostrum animi illo, ab doloribus
-        at delectus fugiat veniam eius corporis rem reprehenderit iusto
-        possimus necessitatibus quasi et!
-    </p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>v<br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>v<br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>
-    <h1 class="contato">Contato</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Ducimus odio suscipit harum. Nostrum animi illo, ab doloribus
-        at delectus fugiat veniam eius corporis rem reprehenderit iusto
-        possimus necessitatibus quasi et!
-    </p>
-    
-    <footer>
-        <p>Todos os direitos reservados</p>
-    </footer>
+    <div class="logo">Gerador de Senha</div>
+    <main class="container-input">
+        <span>Tamanho <span id="valor">15</span> caracteres</span>
+        <input type="range" class="slider" id="slider" value="15" min="1" max="30" onchange="funcao()">
+        <button class="btn-gerar"  onclick="gerarSenha()">Gerar Senha</button>
+    </main>
+
+    <div class="div-senha">
+        <span class="titulo-senha">Senha Gerada: </span>
+        <span class="senha-gerada" id="senha-gerada"></span>
+    </div>
+
+    <div class="div-senha">
+        <span class="copiar-senha" onclick="copiarSenha()">Copiar</span>
+    </div>
 </body>
 </html>
