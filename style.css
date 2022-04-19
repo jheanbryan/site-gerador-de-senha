@@ -5,6 +5,10 @@
     box-sizing: border-box;
     color: #fff;
 }
+@font-face {
+    font-family: 'burbank';
+    src: url(font/burbank-big-condensed-bold.otf) format(otf);
+}
 body {
     background-color: #18181B;
     height: 100vh; /*não ficar com borda nos cantos superiores e inferiores*/
@@ -16,10 +20,11 @@ body {
 }
 .logo{
     max-width: 500px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'burbank';
     margin-bottom: 30px; /*margem inferior, desgrudar do texto  */
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: bold;
 }
 main{
     max-width: 480px;
@@ -77,4 +82,9 @@ main{
     text-align: center;
     border: 1px solid white;
     transition: 0.5s;
+    background-color: rgb(38, 188, 38);
+}
+img{
+    width: 30px;
+    height: auto;
 }
