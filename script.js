@@ -2,7 +2,7 @@ function gerarSenha(){
     let slider = document.getElementById("slider"); //definir tamanho dos caracteres
     let sizePassword = document.getElementById("valor"); //tamanho dos caracteres
     let password = document.getElementById("senha-gerada"); //elemento para escrever a senha
-    let charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    let charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%¨&*()';
     let newPassword = '';
 
     // //escrever o tamanho das caracteres
